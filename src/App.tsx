@@ -1,7 +1,9 @@
-import React from "react";
-import { Grid, GridItem, Show } from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
+import { Grid, GridItem, Show, useRangeSlider } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import GameGrid from "./components/GameGrid";
+
+import axios from "axios";
 
 function App() {
   return (
